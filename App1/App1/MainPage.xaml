@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+    <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" >
+        <Button 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            Text="Next" 
+            Clicked="Button_Clicked" >
+        </Button>
+        
+        <Label  
+            BindingContext="{x:Reference slider}"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            Text="{Binding Value, StringFormat='Font: {0:F0} pt'}"
+            x:Name="fontText">            
+        </Label>
+
+        <Slider 
+            VerticalOptions="Center" 
+            HorizontalOptions="Fill" 
+            Maximum="100"
+            Minimum="8"
+            x:Name="slider">
+        </Slider>
+
+        <Label
+            BindingContext="{x:Reference slider}"
+            HorizontalOptions="CenterAndExpand" 
+            VerticalOptions="Center" 
+            x:Name="quotetext" 
+            FontSize ="{Binding Value}">
+        </Label>
+    </StackLayout>
+
+</ContentPage>
