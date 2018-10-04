@@ -20,7 +20,6 @@ namespace App1
         }
 
         int index = 0;
-
         private void Button_Clicked(object sender, EventArgs e)
         {
            if (index == _quotes.Count - 1) { index = -1; }
