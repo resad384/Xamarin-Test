@@ -38,8 +38,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GridPage.xaml.cs">
-      <DependentUpon>GridPage.xaml</DependentUpon>
+    <Compile Include="Image.xaml.cs">
+      <DependentUpon>Image.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -81,7 +81,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="GridPage.xaml">
+    <EmbeddedResource Include="Image.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

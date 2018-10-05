@@ -10,11 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GridPage : ContentPage
+    public partial class Image : ContentPage
     {
-        public GridPage()
+        public Image()
         {
             InitializeComponent();
+
+
+            imageframe.Source = new UriImageSource
+            {
+                Uri = new Uri("https://picsum.photos/200/300/?random"),
+                CachingEnabled = false
+            };
+
+
         }
     }
 }
