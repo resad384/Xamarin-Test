@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App1
 {     
-    //salam   dcdscsdcdscdscdscsd
+    //salam   dcdscsdcdscdscdscsdfvdfvdfv
     class Quote
     {   
         public string Author { get; set; }
